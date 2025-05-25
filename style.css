@@ -1,41 +1,62 @@
+/* Font romantic din Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
-    color: #333;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #fbeee0; /* bej deschis */
+    font-family: 'Playfair Display', serif;
+    color: #4b1c26; /* vișiniu închis */
+    text-align: center;
+}
+
+header {
+    background-color: #872341; /* vișiniu intens */
+    color: #fff;
+    padding: 30px 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #872341;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fffaf5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    position: relative;
 }
 
-h1, h2 {
-    color: #d94f4f;
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-.memory {
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-.photos img {
-    width: 100%;
-    max-width: 300px;
+.heart {
+    font-size: 24px;
+    color: #e63946; /* inimioare roșii */
     margin: 10px;
-    border-radius: 10px;
+    animation: pulse 1.5s infinite;
 }
 
-.btn {
-    display: inline-block;
-    background-color: #d94f4f;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    color: #a47268;
 }
 
-.btn:hover {
-    background-color: #b83838;
+/* Efect animat inimioare */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
 }
