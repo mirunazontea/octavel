@@ -1,7 +1,5 @@
-/* Fonturi romantice */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
 
-/* Culori */
 :root {
     --bej: #fdf6f0;
     --bej-deschis: #fffaf5;
@@ -19,7 +17,6 @@ body {
     text-align: center;
 }
 
-/* Header */
 header {
     background-color: var(--visiniu);
     color: white;
@@ -29,7 +26,6 @@ header {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Container principal */
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -39,12 +35,10 @@ header {
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-/* Secțiuni */
 section {
     margin-bottom: 50px;
 }
 
-/* Titluri */
 h2 {
     font-family: 'Dancing Script', cursive;
     color: var(--visiniu);
@@ -52,14 +46,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Texte */
 p {
     font-size: 18px;
     line-height: 1.7;
     margin: 10px 0;
 }
 
-/* Inimioare animate */
 .heart {
     font-size: 28px;
     color: var(--accent);
@@ -67,7 +59,6 @@ p {
     margin-top: 20px;
 }
 
-/* Galerie imagini */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +79,6 @@ p {
     transform: scale(1.05);
 }
 
-/* Buton Spotify */
 .btn {
     display: inline-block;
     background-color: var(--visiniu);
@@ -105,7 +95,6 @@ p {
     background-color: #a13a53;
 }
 
-/* Footer */
 footer {
     margin-top: 50px;
     padding: 25px 10px;
@@ -114,9 +103,10 @@ footer {
     background-color: transparent;
 }
 
-/* Animație inimioare */
 @keyframes pulse {
     0% { transform: scale(1); opacity: 1; }
     50% { transform: scale(1.2); opacity: 0.6; }
     100% { transform: scale(1); opacity: 1; }
+}
+
 }
