@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #d94f4f;
+}
+
+.memory {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.photos img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d94f4f;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #b83838;
+}
