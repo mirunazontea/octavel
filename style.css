@@ -1,62 +1,122 @@
-/* Font romantic din Google Fonts */
+/* Fonturi romantice */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');
+
+/* Culori */
+:root {
+    --bej: #fdf6f0;
+    --bej-deschis: #fffaf5;
+    --visiniu: #872341;
+    --visiniu-inchis: #4b1c26;
+    --accent: #e63946;
+}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #fbeee0; /* bej deschis */
+    background-color: var(--bej);
     font-family: 'Playfair Display', serif;
-    color: #4b1c26; /* vișiniu închis */
+    color: var(--visiniu-inchis);
     text-align: center;
 }
 
+/* Header */
 header {
-    background-color: #872341; /* vișiniu intens */
-    color: #fff;
-    padding: 30px 10px;
+    background-color: var(--visiniu);
+    color: white;
+    padding: 30px 15px;
     font-family: 'Dancing Script', cursive;
-    font-size: 36px;
+    font-size: 38px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-h1, h2, h3 {
-    font-family: 'Dancing Script', cursive;
-    color: #872341;
-}
-
+/* Container principal */
 .container {
     max-width: 900px;
     margin: 40px auto;
-    background-color: #fffaf5;
+    background-color: var(--bej-deschis);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    position: relative;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.8;
+/* Secțiuni */
+section {
+    margin-bottom: 50px;
+}
+
+/* Titluri */
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--visiniu);
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
+/* Texte */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+/* Inimioare animate */
 .heart {
-    font-size: 24px;
-    color: #e63946; /* inimioare roșii */
-    margin: 10px;
+    font-size: 28px;
+    color: var(--accent);
     animation: pulse 1.5s infinite;
+    margin-top: 20px;
 }
 
+/* Galerie imagini */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Buton Spotify */
+.btn {
+    display: inline-block;
+    background-color: var(--visiniu);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a13a53;
+}
+
+/* Footer */
 footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 14px;
-    color: #a47268;
+    margin-top: 50px;
+    padding: 25px 10px;
+    font-size: 16px;
+    color: var(--visiniu-inchis);
+    background-color: transparent;
 }
 
-/* Efect animat inimioare */
+/* Animație inimioare */
 @keyframes pulse {
     0% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.2); opacity: 0.7; }
+    50% { transform: scale(1.2); opacity: 0.6; }
     100% { transform: scale(1); opacity: 1; }
 }
